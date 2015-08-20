@@ -9,6 +9,7 @@ class SlackResponsesController < ApplicationController
       send_tweet(@twitter_client, @message)
     rescue Twitter::Error => e
       render json: { text: "Sorry that didn't work: #{e.message}" }
+    end
   end
 
   def create_twitter_client(user)
