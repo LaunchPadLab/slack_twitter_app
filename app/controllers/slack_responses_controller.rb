@@ -1,14 +1,18 @@
 class SlackResponsesController < ApplicationController
 
   def create
-    find_user(params)
-    create_message(params)
-    create_twitter_client(@user)
+    if find_user.nil?
+      render json: { text: "Sorry we couldn't find you. Double check that the team domain name on Slack matches." }
+    else
+      create_message
+      create_twitter_client(@user)
 
-    begin
-      send_tweet(@twitter_client, @message)
-    rescue Twitter::Error => e
-      render json: { text: "Sorry that didn't work: #{e.message}" }
+      begin
+        send_tweet(@twitter_client, @message)
+        render json: { text: "Cha ching!" }
+      rescue Twitter::Error => e
+        render json: { text: "Sorry that didn't work: #{e.message}" }
+      end
     end
   end
 
@@ -21,23 +25,16 @@ class SlackResponsesController < ApplicationController
     end
   end
 
-  def find_user(params)
+  def find_user
     @user = User.find_by_team_domain(params[:team_domain])
   end
 
-  def create_message(params)
+  def create_message
     @message = params[:text].split("#{params[:trigger_word]} ",2).second
   end
 
   def send_tweet(client, message)
     client.update(message)
   end
-
-  private
-
-  def responder
-    @responder ||= Slack::Responder.new(params[:text])
-  end
-
 
 end
