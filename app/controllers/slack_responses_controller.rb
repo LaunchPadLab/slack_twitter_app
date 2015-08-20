@@ -3,7 +3,7 @@ class SlackResponsesController < ApplicationController
   def create
     find_user(params)
     create_twitter_client(@user)
-    @twitter_client.update("So excited to have started at @launchpadlab this week. Learning so much already!")
+    @twitter_client.update(params[:text].split("#{params[:trigger_word]} ",2).second)
   end
 
   def create_twitter_client(user)
