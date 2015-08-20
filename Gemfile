@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'twitter'
+gem 'omniauth-twitter'
+
 # https://github.com/twbs/bootstrap-sass
 gem 'bootstrap-sass'
 gem 'bootstrap-generators', '~> 3.3.4'
@@ -7,11 +10,11 @@ gem 'bootstrap-generators', '~> 3.3.4'
 # https://github.com/FortAwesome/font-awesome-sass
 gem 'font-awesome-sass'
 
+gem 'figaro'
 gem 'devise'
 gem 'faker'
 gem 'jquery-ui-rails'
 gem 'kaminari'
-gem 'simple_form'
 gem 'rails'
 gem 'sass-rails',           '5.0.1'
 gem 'uglifier',             '2.5.3'

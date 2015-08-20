@@ -1,0 +1,3 @@
+class SlackPostController < ApplicationController
+
+end

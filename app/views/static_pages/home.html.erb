@@ -1,0 +1,6 @@
+<%= link_to '<i class="fa fa-twitter"></i> Get started now'.html_safe,
+            signin_path, :class => "btn btn-primary" %>
+
+<% if current_user %>
+  <%= current_user.inspect %>
+<% end %>
