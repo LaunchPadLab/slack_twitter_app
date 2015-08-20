@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   get '/auth/:provider/callback', to: 'sessions#create'
   get "/signout" => "sessions#destroy", :as => :signoutUser
 
-  post '/tweet_from_slack', to: 'slack_responses#new'
   resources :slack_responses
 
 end
