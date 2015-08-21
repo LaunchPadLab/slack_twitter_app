@@ -1,6 +1,14 @@
-<%= link_to '<i class="fa fa-twitter"></i> Get started now'.html_safe,
-            signin_path, :class => "btn btn-primary" %>
-
-<% if current_user %>
-  <%= current_user.inspect %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+      <h2>Send Tweets from Slack</h2>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+      <%= link_to '<i class="fa fa-twitter"></i> Get started now'.html_safe,
+      signin_path, :class => "btn btn-primary" %>
+    </div>
+  </div>
+</div>

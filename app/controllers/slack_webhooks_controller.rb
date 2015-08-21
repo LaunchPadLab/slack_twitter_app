@@ -1,4 +1,4 @@
-class SlackResponsesController < ApplicationController
+class SlackWebhooksController < ApplicationController
 
   def create
     if find_user.nil?
