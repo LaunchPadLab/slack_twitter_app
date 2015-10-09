@@ -26,7 +26,7 @@ class SlackWebhooksController < ApplicationController
   end
 
   def find_user
-    @user = User.find_by_team_domain(params[:team_domain])
+    @user = User.find_by_team_domain_and_slack_token(params[:team_domain], params[:token])
   end
 
   def create_message
