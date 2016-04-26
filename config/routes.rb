@@ -1,15 +1,12 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
 
-  # USER ROUTES==============================================
+  # USER ROUTES==========================================
   get "/auth/twitter", :as => :signin
-  get '/auth/:provider/callback', to: 'sessions#create'
-  get "/signout" => "sessions#destroy", :as => :signoutUser
+  get '/auth/:provider/callback', to: 'users#create'
 
-  resources :slack_webhooks
+  # SLACK WEBHOOK=========================================
+  post "/slack_webhooks" => "slack_webhooks#create"
 
-  resources :users
-
-  get "/sign_up_step_2" => "users#add_team_domain", :as => :add_team_domain
-
+  resources :users, only: [:edit, :create]
 end
