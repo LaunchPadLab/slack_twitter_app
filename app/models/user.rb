@@ -12,8 +12,4 @@ class User < ActiveRecord::Base
     end
   end
 
-  def account_completed?
-    true if team_domain.present?
-  end
-
 end
