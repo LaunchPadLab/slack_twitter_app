@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 
+gem 'rails'
+gem 'sass'
+gem 'sass-rails',           '5.0.1'
 gem 'twitter'
 gem 'omniauth-twitter'
-
 gem 'figaro'
 gem 'devise'
 gem 'faker'
 gem 'jquery-ui-rails'
 gem 'kaminari'
-gem 'rails'
-gem 'sass-rails',           '5.0.1'
 gem 'uglifier',             '2.5.3'
 gem 'coffee-rails',         '4.1.0'
 gem 'jquery-rails',         '4.0.3'
