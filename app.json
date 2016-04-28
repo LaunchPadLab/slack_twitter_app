@@ -1,0 +1,23 @@
+{
+  "name": "Slack Twitter App",
+  "description": "Send tweets to Twitter from a Slack channel",
+  "logo": "https://avatars1.githubusercontent.com/u/1919131?v=3&s=200",
+  "repository": "https://github.com/LaunchPadLab/slack_twitter_app",
+  "keywords": ["slack","twitter","launchpadlab"],
+  "env": {
+    "TWITTER_KEY": {
+      "description": "Set your Twitter Comsumer Key (API Key) to set up Twitter OAuth."
+    },
+    "TWITTER_SECRET_KEY": {
+      "description": "Set your Twitter API Secret Key (API Secret) to set up Twitter OAuth."
+    },
+    "SLACK_TEAM_DOMAIN": {
+      "description": "Set the Slack team domain name, where tweet channel is located.",
+      "required":false
+    },
+    "SLACK_TOKEN": {
+      "description": "Set your Slack token, created when you created the Outgoing Webhook.",
+      "required":false
+    }
+  }
+}
