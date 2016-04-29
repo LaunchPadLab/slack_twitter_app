@@ -21,8 +21,8 @@ class SlackWebhooksController < ApplicationController
       @twitter_client = Twitter::REST::Client.new do |config|
         config.consumer_key = ENV['TWITTER_KEY']
         config.consumer_secret = ENV['TWITTER_SECRET_KEY']
-        config.access_token = user.access_token
-        config.access_token_secret = user.secret_access_token
+        config.access_token = session[:access_token]
+        config.access_token_secret = session[:secret_access_token]
       end
     end
 

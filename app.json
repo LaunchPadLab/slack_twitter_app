@@ -3,7 +3,9 @@
   "description": "Send tweets to Twitter from a Slack channel",
   "logo": "https://avatars1.githubusercontent.com/u/1919131?v=3&s=200",
   "repository": "https://github.com/LaunchPadLab/slack_twitter_app",
-  "keywords": ["slack","twitter","launchpadlab"],
+  "scripts": {
+    "postdeploy": "rake db:migrate"
+  },
   "env": {
     "TWITTER_KEY": {
       "description": "Set your Twitter Comsumer Key (API Key) to set up Twitter OAuth."

@@ -5,6 +5,8 @@ class UsersController < ApplicationController
     user.team_domain = ENV['SLACK_TEAM_DOMAIN']
     user.slack_token = ENV['SLACK_TOKEN']
     user.save
+    # session[:access_token] = auth["credentials"]["token"]
+    # session[:secret_access_token] = auth["credentials"]["secret"]
     redirect_to root_path
   end
 end
