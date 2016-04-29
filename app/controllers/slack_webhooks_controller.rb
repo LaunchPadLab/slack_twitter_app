@@ -1,7 +1,7 @@
 class SlackWebhooksController < ApplicationController
 
   def create
-    if find_user.nil?
+    if find_slack_account.nil?
       render json: { text: "Sorry we couldn't find you. Double check that the team domain name on Slack matches." }
     else
       create_message
@@ -26,8 +26,9 @@ class SlackWebhooksController < ApplicationController
       end
     end
 
-    def find_user
+    def find_slack_account
       @user = User.find_by_team_domain_and_slack_token(params[:team_domain], params[:token])
+      # return ENV['SLACK_TEAM_DOMAIN'] == params[:team_domain] && ENV['SLACK_TOKEN'] == params[:token]
     end
 
     def create_message

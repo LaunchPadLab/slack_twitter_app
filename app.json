@@ -12,12 +12,10 @@
       "description": "Set your Twitter API Secret Key (API Secret) to set up Twitter OAuth."
     },
     "SLACK_TEAM_DOMAIN": {
-      "description": "Set the Slack team domain name, where tweet channel is located.",
-      "required":false
+      "description": "Set the Slack team domain name, where tweet channel is located."
     },
     "SLACK_TOKEN": {
-      "description": "Set your Slack token, created when you created the Outgoing Webhook.",
-      "required":false
+      "description": "Set your Slack token, created when you created the Outgoing Webhook."
     }
   }
 }
