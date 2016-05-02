@@ -33,9 +33,9 @@ By [LaunchPad Lab](http://launchpadlab.com).
 3. Create a new Twitter application using your account.
   `https://apps.twitter.com/ > Create New App`
 
-Use any name and description.
-Website: use the URL from the Heroku deploy.
-Callback URL: use the URL from the Heroku deploy + '/auth/twitter/callback/', e.g., 'https://immense-garden-20341.herokuapp.com/auth/twitter/callback'
+    * Use any name and description.
+    * Website: use the URL from the Heroku deploy.
+    * Callback URL: use the URL from the Heroku deploy + '/auth/twitter/callback/', e.g., 'https://immense-garden-20341.herokuapp.com/auth/twitter/callback'
 
 ![Twitter screenshot](app/assets/images/twitter1.png)
 
@@ -43,7 +43,7 @@ Callback URL: use the URL from the Heroku deploy + '/auth/twitter/callback/', e.
 
   ~~~~
   heroku config:set TWITTER_KEY=...
-  
+
   heroku config:set TWITTER_SECRET_KEY=...
   ~~~~
 
@@ -57,11 +57,13 @@ Callback URL: use the URL from the Heroku deploy + '/auth/twitter/callback/', e.
 
   ~~~~
   heroku config:set SLACK_TEAM_DOMAIN=...
-  
+
   heroku config:set SLACK_TOKEN=...
   ~~~~
-  
+
   ![Slack screenshot](app/assets/images/slack2.png)
 
+### Final Steps
+
 7. Vist your Heroku app and sign in (using Twitter OAuth).
-8. Get to tweeting on your Slack channel!
+8. Get to tweeting using your Slack channel!
