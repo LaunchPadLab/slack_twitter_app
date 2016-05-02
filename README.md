@@ -42,7 +42,7 @@ By [LaunchPad Lab](http://launchpadlab.com).
     * Website: use the URL from the Heroku deploy.
     * Callback URL: use the URL from the Heroku deploy + '/auth/twitter/callback/', e.g.,
 
-    `'https://immense-garden-20341.herokuapp.com/auth/twitter/callback'`
+    `https://YOURAPPNAME.herokuapp.com/auth/twitter/callback`
 
     ![Twitter screenshot](app/assets/images/twitter1.png)
 
