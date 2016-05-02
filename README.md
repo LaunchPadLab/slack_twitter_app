@@ -6,13 +6,29 @@ An app to send tweets from a Slack channel to Twitter.
 
 By [LaunchPad Lab](http://launchpadlab.com).
 
+## Details
+
+* Ruby 2.1.2
+* Postgres
+
 ## Setup
 
-1. Click Deploy to Heroku button.
-2. Create Slack Outgoing Webhook using URL from deploy.  
+1. Click the 'Deploy to Heroku' button.
 
-  `https://slack.com/apps/build > Make a Custom Integration > Outgoing Webhooks`
-4. Create and authorize app through Twitter.
+### Slack
+2. Create Slack Outgoing Webhook using the URL from the Heroku deploy.  
+
+  `https://slack.com/apps/build > Build Your Own > Make a Custom Integration > Outgoing Webhooks`
+
+  ![Alt text](slack1.png)
+
+### Twitter
+3. Create a new Twitter application using your account.
+  `https://apps.twitter.com/ > Create New App`
+* Use any name and description.
+* Website: use the URL from the Heroku deploy.
+* Callback URL: use the URL from the Heroku deploy + '/auth/twitter/callback/', e.g., 'https://immense-garden-20341.herokuapp.com/auth/twitter/callback'
+
 5. Add your Twitter API Key and Secret Key as environment variables through Heroku.
 6. Add your Slack team domain and token from the Outgoing Webhook your created as environment variables through Heroku.
 7. Sign in to app (using Twitter OAuth).
