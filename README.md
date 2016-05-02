@@ -28,6 +28,7 @@ By [LaunchPad Lab](http://launchpadlab.com).
   `https://slack.com/apps/build > Build Your Own > Make a Custom Integration > Outgoing Webhooks`
 
     ![Slack screenshot](app/assets/images/slack1.png)
+    ![Slack screenshot](app/assets/images/slack3.png)
 
   ***
 
