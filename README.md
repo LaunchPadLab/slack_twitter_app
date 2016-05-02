@@ -6,32 +6,53 @@ An app to send tweets from a Slack channel to Twitter.
 
 By [LaunchPad Lab](http://launchpadlab.com).
 
+***
+
 ## Details
 
 * Ruby 2.1.2
 * Postgres
 
+***
+
 ## Setup
 
 1. Click the 'Deploy to Heroku' button.
 
-### Slack
-2. Create Slack Outgoing Webhook using the URL from the Heroku deploy.  
+### Create Slack Outgoing Webhook
+
+2. Create Slack Outgoing Webhook using the URL from the Heroku deploy. Make sure to select an appropriate trigger word.
 
   `https://slack.com/apps/build > Build Your Own > Make a Custom Integration > Outgoing Webhooks`
 
   ![Slack screenshot](app/assets/images/slack1.png)
 
-### Twitter
+### Create new Twitter Application
 3. Create a new Twitter application using your account.
   `https://apps.twitter.com/ > Create New App`
-* Use any name and description.
-* Website: use the URL from the Heroku deploy.
-* Callback URL: use the URL from the Heroku deploy + '/auth/twitter/callback/', e.g., 'https://immense-garden-20341.herokuapp.com/auth/twitter/callback'
-* 
+
+Use any name and description.
+Website: use the URL from the Heroku deploy.
+Callback URL: use the URL from the Heroku deploy + '/auth/twitter/callback/', e.g., 'https://immense-garden-20341.herokuapp.com/auth/twitter/callback'
+
 ![Twitter screenshot](app/assets/images/twitter1.png)
 
-5. Add your Twitter API Key and Secret Key as environment variables through Heroku.
+5. Add your Twitter API Key and Secret Key as environment variables through web UI or command line interface:
+
+  ``
+  heroku config:set TWITTER_KEY=...
+  heroku config:set TWITTER_SECRET_KEY=...
+  ``
+
+![Twitter screenshot](app/assets/images/twitter2.png)
+
 6. Add your Slack team domain and token from the Outgoing Webhook your created as environment variables through Heroku.
+
+  ``
+  heroku config:set SLACK_TEAM_DOMAIN=...
+  heroku config:set SLACK_TOKEN=...
+  ``
+  ![Slack screenshot](app/assets/images/slack2.png)
+
 7. Sign in to app (using Twitter OAuth).
-8. Get to tweeting!
+8. Get to tweeting on your Slack channel!
