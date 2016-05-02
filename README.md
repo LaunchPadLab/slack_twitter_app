@@ -20,7 +20,7 @@ By [LaunchPad Lab](http://launchpadlab.com).
 
   `https://slack.com/apps/build > Build Your Own > Make a Custom Integration > Outgoing Webhooks`
 
-  ![Alt text](slack1.png)
+  ![Slack screenshot](app/assets/images/slack1.png)
 
 ### Twitter
 3. Create a new Twitter application using your account.
@@ -28,6 +28,8 @@ By [LaunchPad Lab](http://launchpadlab.com).
 * Use any name and description.
 * Website: use the URL from the Heroku deploy.
 * Callback URL: use the URL from the Heroku deploy + '/auth/twitter/callback/', e.g., 'https://immense-garden-20341.herokuapp.com/auth/twitter/callback'
+* 
+![Twitter screenshot](app/assets/images/twitter1.png)
 
 5. Add your Twitter API Key and Secret Key as environment variables through Heroku.
 6. Add your Slack team domain and token from the Outgoing Webhook your created as environment variables through Heroku.
