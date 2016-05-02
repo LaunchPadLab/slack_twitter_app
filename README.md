@@ -21,7 +21,7 @@ By [LaunchPad Lab](http://launchpadlab.com).
 
   ### Create Slack Outgoing Webhook
 
-2. Create Slack Outgoing Webhook using the URL from the Heroku deploy. Make sure to select an appropriate trigger word.
+2. Create Slack Outgoing Webhook using the URL from the Heroku deploy **adding the endpoint** `/slack_webhooks`. Make sure to also select an appropriate trigger word.
 
   `https://slack.com/apps/build > Build Your Own > Make a Custom Integration > Outgoing Webhooks`
 
