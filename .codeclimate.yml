@@ -1,0 +1,36 @@
+engines:
+  rubocop:
+    enabled: true
+    checks:
+      Rubocop/Style/Documentation:
+        enabled: false
+      Rubocop/Metrics/LineLength:
+        enabled: false
+      Rubocop/Rails/Validation:
+        enabled: false
+      Rubocop/Style/IndentationConsistency:
+        enabled: false
+      Rubocop/Style/EmptyLines:
+        enabled: false
+      Rubocop/Style/ClassAndModuleChildren:
+        enabled: false
+      Rubocop/Style/AccessorMethodName:
+        enabled: false
+  golint:
+    enabled: true
+  gofmt:
+    enabled: true
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+ratings:
+   paths:
+   - app/**
+   - lib/**
+   - "**.rb"
+   - "**.go"
+exclude_paths:
+- spec/**/*
+- vendor/**/*
+- db/**/*
