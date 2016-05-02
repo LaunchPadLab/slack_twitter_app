@@ -39,7 +39,11 @@ By [LaunchPad Lab](http://launchpadlab.com).
 
 ![Twitter screenshot](app/assets/images/twitter1.png)
 
-5. Add your Twitter API Key and Secret Key as environment variables through web UI or command line interface:
+***
+
+### Heroku
+
+4. Add your Twitter API Key and Secret Key as environment variables through web UI or command line interface:
 
   ~~~~
   heroku config:set TWITTER_KEY=...
@@ -49,11 +53,8 @@ By [LaunchPad Lab](http://launchpadlab.com).
 
 ![Twitter screenshot](app/assets/images/twitter2.png)
 
-***
 
-### Heroku
-
-6. Add your Slack team domain and token from the Outgoing Webhook you created as environment variables through Heroku.
+5. Add your Slack team domain and token from the Outgoing Webhook you created as environment variables through Heroku.
 
   ~~~~
   heroku config:set SLACK_TEAM_DOMAIN=...
@@ -65,5 +66,5 @@ By [LaunchPad Lab](http://launchpadlab.com).
 
 ### Final Steps
 
-7. Vist your Heroku app and sign in (using Twitter OAuth).
-8. Get to tweeting using your Slack channel!
+6. Visit your freshly deployed Heroku app and sign in (using Twitter OAuth).
+7. Get to tweeting using your Slack channel!
