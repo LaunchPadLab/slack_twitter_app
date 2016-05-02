@@ -2,7 +2,7 @@
 
 An app to send tweets from a Slack channel to Twitter.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LaunchPadLab/slack_twitter_app/tree/heroku_deploy_test&env[TWITTER_KEY]=WbHZPLYeVWt25Qx1EF2VgPT91&env[TWITTER_SECRET_KEY]=7Y9abtUIvQ8NFtqI2pKDWJrd3eV2eiekkvbuU74URjGyHMBvcc&env[SLACK_TEAM_DOMAIN]=launchpadlab&env[SLACK_TOKEN]=oAMstvZYYarWG7IQkcNBjha1)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LaunchPadLab/slack_twitter_app/tree/heroku_deploy_test)
 
 By [LaunchPad Lab](http://launchpadlab.com).
 
@@ -30,15 +30,15 @@ By [LaunchPad Lab](http://launchpadlab.com).
   ***
 
   ### Create New Twitter Application
-  
+
 3. Create a new Twitter application using your account.
-  
+
   `https://apps.twitter.com/ > Create New App`
 
     * Use any name and description.
     * Website: use the URL from the Heroku deploy.
-    * Callback URL: use the URL from the Heroku deploy + '/auth/twitter/callback/', e.g., 
-    
+    * Callback URL: use the URL from the Heroku deploy + '/auth/twitter/callback/', e.g.,
+
     `'https://immense-garden-20341.herokuapp.com/auth/twitter/callback'`
 
     ![Twitter screenshot](app/assets/images/twitter1.png)
@@ -58,7 +58,7 @@ By [LaunchPad Lab](http://launchpadlab.com).
     ![Twitter screenshot](app/assets/images/twitter2.png)
 
 
-5. Add your Slack team domain and token from the Outgoing Webhook you created as environment variables through Heroku.
+5. Add your Slack team domain and token from the Outgoing Webhook you created as Heroku environment variables.
 
   ~~~~
   $ heroku config:set SLACK_TEAM_DOMAIN=...
@@ -70,5 +70,5 @@ By [LaunchPad Lab](http://launchpadlab.com).
 
   ### Final Steps
 
-6. Visit your freshly deployed Heroku app and sign in (using Twitter OAuth).
+6. Visit your freshly deployed Heroku app and sign in (uses Twitter OAuth).
 7. Get to tweeting using your Slack channel!
