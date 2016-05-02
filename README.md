@@ -27,6 +27,8 @@ By [LaunchPad Lab](http://launchpadlab.com).
 
   ![Slack screenshot](app/assets/images/slack1.png)
 
+***
+
 ### Create new Twitter Application
 3. Create a new Twitter application using your account.
   `https://apps.twitter.com/ > Create New App`
@@ -39,20 +41,27 @@ Callback URL: use the URL from the Heroku deploy + '/auth/twitter/callback/', e.
 
 5. Add your Twitter API Key and Secret Key as environment variables through web UI or command line interface:
 
-  ``
+  ~~~~
   heroku config:set TWITTER_KEY=...
+  
   heroku config:set TWITTER_SECRET_KEY=...
-  ``
+  ~~~~
 
 ![Twitter screenshot](app/assets/images/twitter2.png)
 
-6. Add your Slack team domain and token from the Outgoing Webhook your created as environment variables through Heroku.
+***
 
-  ``
+### Heroku
+
+6. Add your Slack team domain and token from the Outgoing Webhook you created as environment variables through Heroku.
+
+  ~~~~
   heroku config:set SLACK_TEAM_DOMAIN=...
+  
   heroku config:set SLACK_TOKEN=...
-  ``
+  ~~~~
+  
   ![Slack screenshot](app/assets/images/slack2.png)
 
-7. Sign in to app (using Twitter OAuth).
+7. Vist your Heroku app and sign in (using Twitter OAuth).
 8. Get to tweeting on your Slack channel!
