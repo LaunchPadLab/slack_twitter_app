@@ -56,6 +56,7 @@ GEM
     coffee-script-source (1.10.0)
     columnize (0.9.0)
     concurrent-ruby (1.0.1)
+    dalli (2.7.6)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
     devise (4.0.1)
@@ -100,6 +101,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+    memcachier (0.0.2)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
     mime-types (3.0)
@@ -220,11 +222,13 @@ PLATFORMS
 DEPENDENCIES
   byebug (= 3.4.0)
   coffee-rails (= 4.1.0)
+  dalli
   devise
   figaro
   jbuilder (= 2.2.3)
   jquery-rails (= 4.0.3)
   jquery-ui-rails
+  memcachier
   omniauth-twitter
   pg (= 0.17.1)
   rails

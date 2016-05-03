@@ -1,7 +1,7 @@
 class SlackWebhooksController < ApplicationController
 
   def create
-    if find_slack_account.nil?
+    if !check_slack_account
       render json: { text: "Sorry we couldn't find you. Double check that the team domain name on Slack matches." }
     else
       create_message
@@ -21,14 +21,13 @@ class SlackWebhooksController < ApplicationController
       @twitter_client = Twitter::REST::Client.new do |config|
         config.consumer_key = ENV['TWITTER_KEY']
         config.consumer_secret = ENV['TWITTER_SECRET_KEY']
-        config.access_token = user.access_token
-        config.access_token_secret = user.secret_access_token
+        config.access_token = Rails.cache.read('access_token')
+        config.access_token_secret = Rails.cache.read('secret_access_token')
       end
     end
 
-    def find_slack_account
-      @user = User.find_by_team_domain_and_slack_token(params[:team_domain], params[:token])
-      # return ENV['SLACK_TEAM_DOMAIN'] == params[:team_domain] && ENV['SLACK_TOKEN'] == params[:token]
+    def check_slack_account
+      return ENV['SLACK_TEAM_DOMAIN'] == params[:team_domain] && ENV['SLACK_TOKEN'] == params[:token]
     end
 
     def create_message

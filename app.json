@@ -19,5 +19,8 @@
     "SLACK_TOKEN": {
       "description": "Set your Slack token, created when you created the Outgoing Webhook."
     }
-  }
+  },
+  "addons": [
+    "memcachier"
+  ]
 }
