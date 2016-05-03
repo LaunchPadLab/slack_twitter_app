@@ -13,7 +13,7 @@ By [LaunchPad Lab](http://launchpadlab.com).
 ## Details
 
 * Ruby 2.1.2
-* Postgres
+* Memcachier
 
 ***
 
