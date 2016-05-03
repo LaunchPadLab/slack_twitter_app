@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class CacheController < ApplicationController
   def create
     auth = request.env["omniauth.auth"]
     Rails.cache.write('access_token', auth["credentials"]["token"])
