@@ -37,7 +37,7 @@ Create a new Slack Outgoing Webhook using your account.
 * Keep this window open, we will need some of the settings later.
 
 ![Slack screenshot](app/assets/images/slack1.png)
-![Slack screenshot](app/assets/images/slack3.png)
+![Slack screenshot](app/assets/images/slack-setup.png)
 
 ***
 
@@ -55,7 +55,7 @@ Create a new Twitter application using your account. If you haven't already, you
 * Create your Twitter application
 * Keep this window open, we will need some of the settings later.
 
-![Twitter screenshot](app/assets/images/twitter1.png)
+![Twitter screenshot](app/assets/images/twitter-setup.png)
 
 ***
 
