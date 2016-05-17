@@ -18,6 +18,7 @@ By [LaunchPad Lab](http://launchpadlab.com).
 2. [Create a new Twitter Application](#create-a-new-twitter-application)
 3. [Deploy to Heroku](#deploy-to-heroku)
 4. [Update URLs](#update-urls)
+5. [Final Steps](#final-steps)
 
 ### Create a new Slack Outgoing Webhook
 
