@@ -3,7 +3,7 @@
 
 [![Code Climate](https://codeclimate.com/repos/5727c3e0b7eacc22740059a0/badges/c6e5cf6f1cce6491948d/gpa.svg)](https://codeclimate.com/repos/5727c3e0b7eacc22740059a0/feed)
 
-An app to send tweets from a Slack channel to Twitter.
+Tweet while you Slack! You're already using Slack for all forms of communication, why not send tweets to Twitter from Slack too?
 
 TODO - add a more marketable general description and a detailed description including requirements (ie paid heroku account)
 
@@ -69,7 +69,7 @@ TODO - update screenshot to reflect above
  * SLACK_TEAM_DOMAIN: Your slack team domain (ours is 'launchpadlab')
  * SLACK_TOKEN: Token from Slack Outgoing Webhook configuration
 
-TODO - add screenshot
+  ![Heroku Screenshot](app/assets/images/heroku.png)
 
 ### Update URLs
 Replace 'YOURAPPNAME' with your Heroku app name in:
