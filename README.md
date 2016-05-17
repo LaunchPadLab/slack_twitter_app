@@ -1,4 +1,6 @@
-# Tweet from Slack!
+#  Tweet from Slack!
+<img src="app/assets/images/lpl-logo.png" width="50" alt="LaunchPad Lab Logo"> By [LaunchPad Lab](http://launchpadlab.com).
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LaunchPadLab/slack_twitter_app/tree/dev)
 
 [![Code Climate](https://codeclimate.com/repos/5727c3e0b7eacc22740059a0/badges/c6e5cf6f1cce6491948d/gpa.svg)](https://codeclimate.com/repos/5727c3e0b7eacc22740059a0/feed)
@@ -6,10 +8,6 @@
 Tweet while you Slack! You're already using Slack for all forms of communication, why not send tweets to Twitter from Slack too?
 
 TODO - add a more marketable general description and a detailed description including requirements (ie paid heroku account)
-
-TODO - add a lpl logo
-
-By [LaunchPad Lab](http://launchpadlab.com).
 
 ***
 
