@@ -8,5 +8,4 @@ Rails.application.routes.draw do
   # SLACK WEBHOOK=========================================
   post "/slack_webhooks" => "slack_webhooks#create"
 
-  resources :users, only: [:edit, :create]
 end
