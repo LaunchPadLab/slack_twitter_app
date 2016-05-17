@@ -4,17 +4,17 @@
 
 [![Code Climate](https://codeclimate.com/repos/5727c3e0b7eacc22740059a0/badges/c6e5cf6f1cce6491948d/gpa.svg)](https://codeclimate.com/repos/5727c3e0b7eacc22740059a0/feed)
 
-Tweet while you Slack! You're already using Slack for all forms of communication, why not send tweets to Twitter from Slack too?
+Tweet while you Slack! You're already using Slack for all forms of communication, why not send tweets to Twitter from Slack, too?
 The Slack Twitter app makes it simple to send tweets from a Slack channel.
-
-TODO - add a more marketable general description and a detailed description including requirements (ie paid heroku account)
 
 By [LaunchPad Lab](http://launchpadlab.com).
 
 ***
 
+TODO - add a detailed description including requirements (ie paid heroku account)
 ## Overview
-The Slack Twitter App uses Twitter OAuth to authenticate your Twitter account.
+The Slack Twitter App uses Twitter OAuth to authenticate your Twitter account. You will need a paid Heroku account in order to use
+the Memcachier add-on that Tweet from Slack requires (although the add-on is free).
 
 ***
 
