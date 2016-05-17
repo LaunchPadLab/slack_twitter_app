@@ -1,15 +1,20 @@
-# Tweet from Slack!
+#  Tweet from Slack! <img src="app/assets/images/lpl-logo.png" width="50" alt="LaunchPad Lab Logo">
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LaunchPadLab/slack_twitter_app/tree/dev)
 
 [![Code Climate](https://codeclimate.com/repos/5727c3e0b7eacc22740059a0/badges/c6e5cf6f1cce6491948d/gpa.svg)](https://codeclimate.com/repos/5727c3e0b7eacc22740059a0/feed)
 
 Tweet while you Slack! You're already using Slack for all forms of communication, why not send tweets to Twitter from Slack too?
+The Slack Twitter app makes it simple to send tweets from a Slack channel.
 
 TODO - add a more marketable general description and a detailed description including requirements (ie paid heroku account)
 
-TODO - add a lpl logo
-
 By [LaunchPad Lab](http://launchpadlab.com).
+
+***
+
+## Overview
+The Slack Twitter App uses Twitter OAuth to authenticate your Twitter account.
 
 ***
 
@@ -31,8 +36,6 @@ Create a new Slack Outgoing Webhook using your account.
 * URL: `https://YOURAPPNAME.herokuapp.com/slack_webhooks` (we will update this later)
 * Keep this window open, we will need some of the settings later.
 
-TODO - update screenshot to reflect above
-
 ![Slack screenshot](app/assets/images/slack1.png)
 ![Slack screenshot](app/assets/images/slack3.png)
 
@@ -52,8 +55,6 @@ Create a new Twitter application using your account. If you haven't already, you
 * Create your Twitter application
 * Keep this window open, we will need some of the settings later.
 
-TODO - update screenshot to reflect above
-
 ![Twitter screenshot](app/assets/images/twitter1.png)
 
 ***
@@ -69,7 +70,7 @@ TODO - update screenshot to reflect above
  * SLACK_TEAM_DOMAIN: Your slack team domain (ours is 'launchpadlab')
  * SLACK_TOKEN: Token from Slack Outgoing Webhook configuration
 
-  ![Heroku Screenshot](app/assets/images/heroku.png)
+![Heroku Screenshot](app/assets/images/heroku.png)
 
 ### Update URLs
 Replace 'YOURAPPNAME' with your Heroku app name in:
