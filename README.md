@@ -6,8 +6,18 @@
 [![Code Climate](https://codeclimate.com/repos/5727c3e0b7eacc22740059a0/badges/c6e5cf6f1cce6491948d/gpa.svg)](https://codeclimate.com/repos/5727c3e0b7eacc22740059a0/feed)
 
 Tweet while you Slack! You're already using Slack for all forms of communication, why not send tweets to Twitter from Slack too?
+The Slack Twitter app makes it simple to send tweets from a Slack channel.
 
 TODO - add a more marketable general description and a detailed description including requirements (ie paid heroku account)
+
+TODO - add a lpl logo
+
+By [LaunchPad Lab](http://launchpadlab.com).
+
+***
+
+## Overview
+The Slack Twitter App uses Twitter OAuth to authenticate your Twitter account. T
 
 ***
 
