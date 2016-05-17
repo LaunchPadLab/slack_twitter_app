@@ -4,7 +4,7 @@
 
 An app to send tweets from a Slack channel to Twitter.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LaunchPadLab/slack_twitter_app/tree/heroku_deploy_test)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LaunchPadLab/slack_twitter_app/tree/dev)
 
 By [LaunchPad Lab](http://launchpadlab.com).
 
