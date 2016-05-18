@@ -13,7 +13,11 @@ By [LaunchPad Lab](http://launchpadlab.com).
 
 ## Overview
 
-All of us at LaunchPad Lab love using Slack as a means of team communication -- so much so that we even wanted to be able to send our tweets from Slack as well. Who has time to open a new browser tab anyway? This is where Tweet from Slack comes in! After obtaining the necessary tokens from Twitter and Slack, click the Deploy to Heroku button. This will take you to a deployment page where you can set the appropriate config variables. The URL of your deployed app will then be used as part of a Slack Outgoing Webhook integration with Twitter. Keep in mind you will need a paid Heroku account in order to use the Memcachier add-on that Tweet from Slack requires in order to save Twitter access tokens. However, the Memcachier add-on is free and you will not be charged. Follow the [Setup](#setup) steps below, and get to tweeting from Slack!
+All of us at LaunchPad Lab love using Slack as a means of team communication -- so much so that we even wanted to be able to send our tweets from Slack as well. Who has time to open a new browser tab anyway? This is where Tweet from Slack comes in! After obtaining the necessary tokens from Twitter and Slack, click the Deploy to Heroku button. This will take you to a deployment page where you can set the appropriate config variables. The URL of your deployed app will then be used as part of a Slack Outgoing Webhook integration with Twitter.
+
+Keep in mind you will need a paid Heroku account in order to use the Memcachier add-on that Tweet from Slack requires in order to save Twitter access tokens. However, the Memcachier add-on is free and you will not be charged.
+
+Follow the [Setup](#setup) steps below, and get to tweeting from Slack!
 
 ***
 
