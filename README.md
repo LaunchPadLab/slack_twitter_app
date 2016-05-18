@@ -1,20 +1,19 @@
 #  Tweet from Slack! <img src="app/assets/images/lpl-logo.png" width="50" alt="LaunchPad Lab Logo">
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LaunchPadLab/slack_twitter_app/tree/dev)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 [![Code Climate](https://codeclimate.com/repos/5727c3e0b7eacc22740059a0/badges/c6e5cf6f1cce6491948d/gpa.svg)](https://codeclimate.com/repos/5727c3e0b7eacc22740059a0/feed)
 
-Tweet while you Slack! You're already using Slack for all forms of communication, why not send tweets to Twitter from Slack, too?
-The Slack Twitter app makes it simple to send tweets from a Slack channel.
+Tweet while you Slack! You're already using Slack for all forms of team communication. Why not send tweets from Slack, too?
+The Tweet from Slack app makes it simple to send tweets from a Slack channel.
 
 By [LaunchPad Lab](http://launchpadlab.com).
 
 ***
 
-TODO - add a detailed description including requirements (ie paid heroku account)
 ## Overview
-The Slack Twitter App uses Twitter OAuth to authenticate your Twitter account. You will need a paid Heroku account in order to use
-the Memcachier add-on that Tweet from Slack requires (although the add-on is free).
+
+All of us at LaunchPad Lab love using Slack as a means of team communication -- so much so that we even wanted to be able to send our tweets from Slack as well. Who has time to open a new browser tab anyway? This is where Tweet from Slack comes in! After obtaining the necessary tokens from Twitter and Slack, click the Deploy to Heroku button. This will take you to a deployment page where you can set the appropriate config variables. The URL of your deployed app will then be used as part of a Slack Outgoing Webhook integration with Twitter. Keep in mind you will need a paid Heroku account in order to use the Memcachier add-on that Tweet from Slack requires in order to save Twitter access tokens. However, the Memcachier add-on is free and you will not be charged. Follow the [Setup](#setup) steps below, and get to tweeting from Slack!
 
 ***
 
